@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>145aad58-95cd-431c-bdbc-b8d58a323ad8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Assignment5.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Assignment5</Name>
+    <RootNamespace>Assignment5</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assignment5.py" />
+    <Compile Include="magic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mystuff.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="palindromew.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pascal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="romanc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="whileloops.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="m1.txt" />
+    <Content Include="m2.txt" />
+    <Content Include="m3.txt" />
+    <Content Include="m4.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
